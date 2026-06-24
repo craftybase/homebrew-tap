@@ -5,20 +5,20 @@
 class Craftybase < Formula
   desc "Official CLI for the Craftybase Public API"
   homepage "https://craftybase.com"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/craftybase/craftybase-cli/releases/download/v0.2.0/craftybase_0.2.0_darwin_amd64.tar.gz"
-      sha256 "3bef85999705da3a6fceed3370b504a012b1fde7349012dc7b23bfa438b3ad8e"
+      url "https://github.com/craftybase/craftybase-cli/releases/download/v0.3.0/craftybase_0.3.0_darwin_amd64.tar.gz"
+      sha256 "2dc3794bd7c6dfd2232759d0d96405693c9167c02552b2b1070aa30c12ee9e19"
 
       define_method(:install) do
         bin.install "craftybase"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/craftybase/craftybase-cli/releases/download/v0.2.0/craftybase_0.2.0_darwin_arm64.tar.gz"
-      sha256 "13058b1aa0b39827c198ea63994173c17ba3e6650b818345abb7ca2c15a95b33"
+      url "https://github.com/craftybase/craftybase-cli/releases/download/v0.3.0/craftybase_0.3.0_darwin_arm64.tar.gz"
+      sha256 "d1eb4d9790f3cb124b361ef7a8868ca1e237ef2da37de831e39ba3aef76506c1"
 
       define_method(:install) do
         bin.install "craftybase"
@@ -28,15 +28,15 @@ class Craftybase < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/craftybase/craftybase-cli/releases/download/v0.2.0/craftybase_0.2.0_linux_amd64.tar.gz"
-      sha256 "a3f268ff98bf1ace94c23ef45c8fc5b3552805d5a9c3c01fcea2a253a55474fa"
+      url "https://github.com/craftybase/craftybase-cli/releases/download/v0.3.0/craftybase_0.3.0_linux_amd64.tar.gz"
+      sha256 "5fa07b8b5c75e75a6590167ef8bb3033ba963b19893c0b9c54da34c12f205a2c"
       define_method(:install) do
         bin.install "craftybase"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/craftybase/craftybase-cli/releases/download/v0.2.0/craftybase_0.2.0_linux_arm64.tar.gz"
-      sha256 "5294d827da8cb64b1430c34c612ec19a3bde353f97ab7bfb2476fef7a839aaf7"
+      url "https://github.com/craftybase/craftybase-cli/releases/download/v0.3.0/craftybase_0.3.0_linux_arm64.tar.gz"
+      sha256 "d420a4e9c8db4f6dd50c1ff0ec963b4b297f4d06d4a96acc1ec90d67a16c75a0"
       define_method(:install) do
         bin.install "craftybase"
       end
