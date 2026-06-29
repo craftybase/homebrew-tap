@@ -1,2 +1,2 @@
 # homebrew-tap
-Homebrew tap for the Craftybase CLI
+Homebrew tap for the Stocksmith CLI
